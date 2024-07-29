@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: rgb(242, 239, 239);
+}
+
+#main {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+}
+
+.container1 {
+    margin-top: 50px;
+    background-color: white;
+    flex-direction: column;
+    height: 230px;
+    width: 36%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    border-radius: 12px;
+    position: relative;
+}
+
+.container2 {
+    position: relative;
+    margin-top: 50px;
+    border-radius: 12px;
+    background-color: white;
+    flex-direction: column;
+    height: 230px;
+    width: 36%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+h2 {
+    margin-left: 22px;
+    margin-top: 20px;
+}
+
+#budget {
+    width: 80%;
+    height: 35px;
+    margin-left: 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size: 16px;
+    padding-left: 1vw;
+}
+
+#product-title {
+    width: 80%;
+    height: 35px;
+    margin-left: 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size: 16px;
+    padding-left: 1vw;
+}
+
+#product-cost {
+    width: 80%;
+    height: 35px;
+    margin-left: 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size: 16px;
+    padding-left: 1vw;
+}
+
+#set-budget {
+    width: 30%;
+    margin-left: 26px;
+    margin-top: 2vw;
+    height: 43px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+    font-size: 15px;
+    background-color: #4a89ff;
+    color: white;
+    cursor: pointer;
+}
+
+#set-budget:hover {
+    background-color: #3262bb;
+    transition: all 0.5s ease-in-out;
+}
+
+#checkAmount {
+    width: 30%;
+    margin-left: 22px;
+    margin-top: 0.4vw;
+    height: 43px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+    font-size: 15px;
+    background-color: #4a89ff;
+    color: white;
+    cursor: pointer;
+}
+
+#checkAmount:hover {
+    background-color: #3262bb;
+    transition: all 0.5s ease-in-out;
+}
+
+#budget-list {
+    display: flex;
+    width: 75%;
+    background-color: #4a89ff;
+    justify-content: center;
+    align-items: center;
+    margin-left: 164px;
+    margin-top: -30px;
+    gap: 10vw;
+    height: 100px;
+    border-radius: 12px;
+}
+
+.expenses,
+.balance,
+.totalBudget {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 70px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+}
+
+#budget-value,
+#Rbalance,
+#expense-value {
+    color: white;
+    text-align: center;
+    margin-top: 14px;
+}
+
+.name {
+    display: flex;
+    margin-left: 164px;
+    width: 75%;
+    margin-top: 20px;
+    height: 75px;
+    background-color: white;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.name h2 {
+    font-size: 22px !important;
+}
+
+#expense-list {
+    position: relative;
+}
+
+.itemList {
+    display: flex;
+    width: 75%;
+    margin-left: 164px;
+    height: 55px;
+    align-items: center;
+    background-color: white;
+}
+
+hr {
+    background-color: gray;
+    height: 3px;
+    width: 85%;
+    margin-left: 10px;
+    border: none;
+}
+
+.abc {
+    background-color: gray;
+    width: 72%;
+    margin-left: 180px;
+    margin-top: -10px;
+}
+
+.sNo {
+    margin-left: 20px;
+}
+
+.delete {
+    font-size: 20px;
+    color: #4a89ff;
+    border: none;
+    height: 27px;
+    background-color: white;
+}
+
+.delete:hover {
+    color: #3262bb;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.sNo,
+.cost,
+.delete {
+    width: 14%;
+    font-size: 17px;
+}
+
+.title {
+    width: 50%;
+    font-size: 17px;
+}
+
+#clearAll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    position: absolute;
+    right: 15%;
+}
+
+#clearBtn {
+    height: 50px;
+    width: 130px;
+    background-color: #4a89ff;
+    border: none;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    border-radius: 7px;
+
+}
+
+#clearBtn:hover {
+    background-color: #3262bb;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+@media (max-width:500px) {
+    #main {
+        flex-direction: column;
+        height: auto;
+        margin-top: -30px;
+
+    }
+
+    #checkAmount {
+        width: 150px;
+    }
+
+    #set-budget {
+        width: 120px;
+    }
+
+    .container1,
+    .container2 {
+        width: 90%;
+        gap: 4vw;
+    }
+
+    .sNo,
+    .cost,
+    .delete,
+    .title {
+        width: 100%;
+        text-align: center;
+    }
+
+    #budget-list {
+        flex-direction: column;
+        height: 340px;
+        margin: auto;
+        margin-top: 30px;
+        width: 90%;
+        align-items: flex-start;
+    }
+
+    .name {
+        margin: auto;
+        margin-top: 30px;
+        width: 90%;
+        height: 80px;
+    }
+
+    .itemList {
+        margin: auto;
+        width: 90%;
+    }
+    .abc{
+        margin: auto;
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .expenses,
+    .balance,
+    .totalBudget {
+        flex-direction: row;
+        gap: 5vw;
+        margin-left: 30px;
+    }
+
+    p {
+        width: 42%;
+        margin-top: 15px;
+    }
+
+    #budget-value,
+    #Rbalance,
+    #expense-value {
+        width: 42%;
+        text-align: center;
+    }
+
+    #clearAll {
+        margin: auto;
+        width: 100%;
+        position: relative;
+        margin-left: 55px;
+        margin-top: 30px;
+    }
+
+    #clearBtn {
+        width: 160px;
+        height: 50px;
+        word-spacing:4px;
+        font-size: 16px;
+    }
+}
